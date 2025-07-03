@@ -1,0 +1,2 @@
+Params: 53018
+Final test accuracy: 0.9744
