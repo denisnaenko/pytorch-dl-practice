@@ -1,0 +1,5 @@
+Model,Final Train Acc,Final Test Acc,Best Test Acc,Final Train Loss,Final Test Loss,Training Time,Parameters
+kernel_3x3,0.9925,0.9865,0.9871,0.0216,0.0460,73.94s,0.80M
+kernel_5x5,0.9936,0.9872,0.9895,0.0190,0.0446,74.03s,0.81M
+kernel_7x7,0.9940,0.9897,0.9918,0.0174,0.0410,74.44s,0.81M
+kernel_combo,0.9861,0.9848,0.9854,0.0417,0.0526,85.27s,1.61M

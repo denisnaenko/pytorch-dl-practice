@@ -1,0 +1,80 @@
+=== COMPREHENSIVE MODEL ANALYSIS REPORT ===
+
+1. MODEL COMPARISON TABLE:
+          Model Best Test Accuracy Final Test Accuracy Best Train Accuracy Final Train Accuracy Overfitting Gap Training Time (s) Parameters (M) Inference Time (ms)
+0     FC_Simple             0.9842              0.9827              0.9870               0.9867          0.0028            106.21           0.57                0.17
+1       FC_Deep             0.5838              0.5813              0.6647               0.6647          0.0809            170.46           3.84                0.32
+2    CNN_Simple             0.9933              0.9921              0.9970               0.9970          0.0037            119.55           0.42                0.19
+3  CNN_Residual             0.8230              0.8205              0.9707               0.9707          0.1477            296.24           0.16                0.55
+4     CNN_CIFAR             0.7661              0.7586              0.9553               0.9553          0.1892            178.07           0.62                0.26
+5      CNN_Deep             0.8244              0.8188              0.9816               0.9816          0.1572            285.69           2.61                0.43
+
+2. OVERFITTING ANALYSIS:
+FC_Simple:
+  Overfitting Gap: 0.0028
+  Overfitting Ratio: 0.0028
+FC_Deep:
+  Overfitting Gap: 0.0809
+  Overfitting Ratio: 0.1217
+CNN_Simple:
+  Overfitting Gap: 0.0037
+  Overfitting Ratio: 0.0037
+CNN_Residual:
+  Overfitting Gap: 0.1477
+  Overfitting Ratio: 0.1522
+CNN_CIFAR:
+  Overfitting Gap: 0.1892
+  Overfitting Ratio: 0.1981
+CNN_Deep:
+  Overfitting Gap: 0.1572
+  Overfitting Ratio: 0.1601
+
+3. EFFICIENCY METRICS:
+FC_Simple:
+  Accuracy per Parameter: 1.734475
+  Accuracy per Time: 5790.481129
+FC_Deep:
+  Accuracy per Parameter: 0.151995
+  Accuracy per Time: 1801.354105
+CNN_Simple:
+  Accuracy per Parameter: 2.355790
+  Accuracy per Time: 5168.600555
+CNN_Residual:
+  Accuracy per Parameter: 5.096543
+  Accuracy per Time: 1499.638197
+CNN_CIFAR:
+  Accuracy per Parameter: 1.234924
+  Accuracy per Time: 2957.927953
+CNN_Deep:
+  Accuracy per Parameter: 0.316212
+  Accuracy per Time: 1897.254471
+
+4. MODEL RANKING:
+Overall Ranking (lower is better):
+  FC_Simple: 1.33
+  CNN_Simple: 2.00
+  FC_Deep: 3.67
+  CNN_Residual: 4.67
+  CNN_CIFAR: 4.67
+  CNN_Deep: 4.67
+
+5. LEARNING CURVE ANALYSIS:
+FC_Simple:
+  Learning Efficiency: 0.2484
+  Test Stability: 0.000001
+FC_Deep:
+  Learning Efficiency: 0.5407
+  Test Stability: 0.000013
+CNN_Simple:
+  Learning Efficiency: 0.1092
+  Test Stability: 0.000000
+CNN_Residual:
+  Learning Efficiency: 0.3562
+  Test Stability: 0.000017
+CNN_CIFAR:
+  Learning Efficiency: 0.4353
+  Test Stability: 0.000004
+CNN_Deep:
+  Learning Efficiency: 0.7360
+  Test Stability: 0.000012
+

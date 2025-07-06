@@ -1,0 +1,4 @@
+Model,Final Train Acc,Final Test Acc,Best Test Acc,Final Train Loss,Final Test Loss,Training Time,Parameters
+basic_residual,0.9960,0.9824,0.9865,0.0118,0.0704,54.41s,0.13M
+bottleneck_residual,0.9951,0.9764,0.9790,0.0144,0.0946,55.66s,0.13M
+wide_residual,0.9950,0.9831,0.9851,0.0153,0.0638,66.32s,0.26M

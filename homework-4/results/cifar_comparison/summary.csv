@@ -1,0 +1,5 @@
+Model,Final Train Acc,Final Test Acc,Best Test Acc,Final Train Loss,Final Test Loss,Training Time,Parameters
+FC_Deep,0.6647,0.5813,0.5838,0.9641,1.1959,170.46s,3.84M
+CNN_CIFAR,0.9553,0.7586,0.7661,0.1297,1.3107,178.07s,0.62M
+CNN_Deep,0.9816,0.8188,0.8244,0.0595,0.9743,285.69s,2.61M
+CNN_Residual,0.9707,0.8205,0.8230,0.0841,0.7486,296.24s,0.16M

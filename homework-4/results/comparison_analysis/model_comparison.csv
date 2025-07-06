@@ -1,0 +1,7 @@
+Model,Best Test Accuracy,Final Test Accuracy,Best Train Accuracy,Final Train Accuracy,Overfitting Gap,Training Time (s),Parameters (M),Inference Time (ms)
+FC_Simple,0.9842,0.9827,0.9870,0.9867,0.0028,106.21,0.57,0.17
+FC_Deep,0.5838,0.5813,0.6647,0.6647,0.0809,170.46,3.84,0.32
+CNN_Simple,0.9933,0.9921,0.9970,0.9970,0.0037,119.55,0.42,0.19
+CNN_Residual,0.8230,0.8205,0.9707,0.9707,0.1477,296.24,0.16,0.55
+CNN_CIFAR,0.7661,0.7586,0.9553,0.9553,0.1892,178.07,0.62,0.26
+CNN_Deep,0.8244,0.8188,0.9816,0.9816,0.1572,285.69,2.61,0.43

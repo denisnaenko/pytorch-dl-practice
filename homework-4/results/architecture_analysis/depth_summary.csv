@@ -1,0 +1,5 @@
+Model,Final Train Acc,Final Test Acc,Best Test Acc,Final Train Loss,Final Test Loss,Training Time,Parameters
+cnn_2_layers,0.9965,0.9918,0.9918,0.0109,0.0309,79.72s,0.42M
+cnn_4_layers,0.9970,0.9924,0.9939,0.0107,0.0311,131.26s,1.82M
+cnn_6_layers,0.9971,0.9938,0.9938,0.0102,0.0317,131.16s,1.82M
+cnn_residual,0.9960,0.9950,0.9950,0.0124,0.0160,144.78s,0.16M

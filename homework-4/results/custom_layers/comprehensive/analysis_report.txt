@@ -1,0 +1,91 @@
+=== COMPREHENSIVE MODEL ANALYSIS REPORT ===
+
+1. MODEL COMPARISON TABLE:
+                 Model Best Test Accuracy Final Test Accuracy Best Train Accuracy Final Train Accuracy Overfitting Gap Training Time (s) Parameters (M) Inference Time (ms)
+0          custom_conv             0.9780              0.9768              0.9901               0.9901          0.0121             35.28           0.13                0.00
+1       attention_conv             0.9778              0.9772              0.9896               0.9896          0.0118             36.70           0.13                0.00
+2          custom_pool             0.9205              0.9205              0.9170               0.9170         -0.0035             32.25           0.00                0.00
+3    custom_activation             0.9234              0.9234              0.9247               0.9247          0.0013             32.36           0.01                0.00
+4       basic_residual             0.9865              0.9824              0.9960               0.9960          0.0095             54.41           0.13                0.00
+5  bottleneck_residual             0.9790              0.9764              0.9951               0.9951          0.0161             55.66           0.13                0.00
+6        wide_residual             0.9851              0.9831              0.9950               0.9950          0.0099             66.32           0.26                0.00
+
+2. OVERFITTING ANALYSIS:
+custom_conv:
+  Overfitting Gap: 0.0121
+  Overfitting Ratio: 0.0123
+attention_conv:
+  Overfitting Gap: 0.0118
+  Overfitting Ratio: 0.0119
+custom_pool:
+  Overfitting Gap: -0.0035
+  Overfitting Ratio: -0.0038
+custom_activation:
+  Overfitting Gap: 0.0013
+  Overfitting Ratio: 0.0014
+basic_residual:
+  Overfitting Gap: 0.0095
+  Overfitting Ratio: 0.0096
+bottleneck_residual:
+  Overfitting Gap: 0.0161
+  Overfitting Ratio: 0.0161
+wide_residual:
+  Overfitting Gap: 0.0099
+  Overfitting Ratio: 0.0099
+
+3. EFFICIENCY METRICS:
+custom_conv:
+  Accuracy per Parameter: 7.784021
+  Accuracy per Time: 0.000000
+attention_conv:
+  Accuracy per Parameter: 7.777354
+  Accuracy per Time: 0.000000
+custom_pool:
+  Accuracy per Parameter: 467.258883
+  Accuracy per Time: 0.000000
+custom_activation:
+  Accuracy per Parameter: 117.630573
+  Accuracy per Time: 0.000000
+basic_residual:
+  Accuracy per Parameter: 7.704503
+  Accuracy per Time: 0.000000
+bottleneck_residual:
+  Accuracy per Parameter: 7.751017
+  Accuracy per Time: 0.000000
+wide_residual:
+  Accuracy per Parameter: 3.778934
+  Accuracy per Time: 0.000000
+
+4. MODEL RANKING:
+Overall Ranking (lower is better):
+  custom_conv: 2.67
+  attention_conv: 3.67
+  custom_pool: 3.67
+  basic_residual: 3.67
+  custom_activation: 4.00
+  bottleneck_residual: 5.00
+  wide_residual: 5.33
+
+5. LEARNING CURVE ANALYSIS:
+custom_conv:
+  Learning Efficiency: 0.1896
+  Test Stability: 0.000009
+attention_conv:
+  Learning Efficiency: 0.1247
+  Test Stability: 0.000005
+custom_pool:
+  Learning Efficiency: 0.2168
+  Test Stability: 0.000026
+custom_activation:
+  Learning Efficiency: 0.3203
+  Test Stability: 0.000016
+basic_residual:
+  Learning Efficiency: 0.0081
+  Test Stability: 0.000002
+bottleneck_residual:
+  Learning Efficiency: -0.0614
+  Test Stability: 0.000003
+wide_residual:
+  Learning Efficiency: 0.0781
+  Test Stability: 0.000001
+
