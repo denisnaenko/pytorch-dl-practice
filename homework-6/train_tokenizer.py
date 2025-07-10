@@ -1,4 +1,5 @@
 # type: ignore
+import os
 from tokenizers import Tokenizer, decoders, models, pre_tokenizers, trainers
 
 corpus_path = "russian_news_corpus/russian_news.txt"
@@ -14,6 +15,7 @@ trainer = trainers.BpeTrainer(
 with open(corpus_path, encoding="utf-8", errors="ignore") as f:
     lines = [line.strip() for line in f if line.strip()]
 
+os.makedirs("tokenizer", exist_ok=True)
 tokenizer.train_from_iterator(lines, trainer)
 tokenizer.save("tokenizer/russian_tokenizer.json")
 
